@@ -3,6 +3,12 @@
     --shadow: 0 0 30px gray;
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 main {
     max-width: 840px;
 }
@@ -13,20 +19,24 @@ main img {
     border: var(--border);
     padding: 2px;
     box-shadow: var(--shadow);
+    float: right;
 }
 
 aside {
     width: 20rem;
     margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
+    position: relative;
     text-align: center;
 }
 
+aside h2 {
+    position: absolute;
+    left: 50%;
+    top: 3rem;
+}
+
 aside img {
-    width: 200px;
+    width: 100%;
     height: auto;
 }
 
@@ -61,4 +71,14 @@ footer {
     margin-top: 15px;
     border-top: var(--border);
     text-align: center;
+}
+
+/* Class Selectores */
+.box {
+    border: 1px solid #b71234;
+    padding: 1rem;
+    margin: 10px 0;
+    background-color: #cccaca;
+    color: #1a044e;
+    margin: 1rem;
 }
